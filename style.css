@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;       /* base is 400 for font */
+    scroll-behavior: smooth;
+    color: #212121;
+}
+
+h1 {
+    /* ram: 1 rem is the default font is html which is about 16px - rem is more uniform */
+    font-size: 4.5rem;
+    line-height: 2rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+}
+
+ul {
+    font-size: 1.5rem;
+    padding-left: 5.5rem;
+
+
+}
+
+#portrait {
+    width: 400px;
+    border: 10px solid #212121;
+    margin: 1rem 2rem 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #232323;
+    margin-bottom: 2rem;
+}
+
+a:hover { /* when you hover over something with a tag a then it will follow the code below */
+    color: #e0e0e0;
+}
+
+i {
+    font-size: 1.75rem;
+    margin: 0 10px 10px 10px;
+    color: white;
+}
+
+
+
+/* navbar */
+nav {;
+    height: 64px;
+    width: 100%;
+    background-color: #69C8EB;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;   /*gets rid of bullet points*/
+}
+
+nav ul li {
+    margin: 30px;
+}
+
+#title {
+    font-size: 1.8rem;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.top {
+    padding-top: 7rem;
+}
+
+/* footer section */
+
+footer {
+    height: 5.5rem;
+    width: 100%;
+    background-color: #69C8EB;
+    color: white;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+
+
+/* about me*/
+.lsts {
+    list-style: square;
+}
+
+#opening {
+    display: inline-flex;
+}
+
