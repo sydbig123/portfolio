@@ -22,6 +22,12 @@ h2 {
     padding: 0 2rem;
 }
 
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
 p {
     font-size: 1.25rem;
     padding: 1rem 2.5rem;
@@ -44,7 +50,7 @@ ul {
 
 nav a {
     text-decoration: none;
-    color: #232323;
+    color: #212121;
     margin-bottom: 2rem;
 }
 
@@ -123,13 +129,13 @@ footer {
     align-content: center;
 }
 
-#project img {
+.project img {
     margin: 1rem 2.5rem;
     width: 50%;
     height: auto;
 }
 
-#project p {
+.project p {
     padding-bottom: 0;
 }
 
@@ -139,5 +145,25 @@ footer {
 }
 
 .diagram {
-    width: 100%;
+    width: 98%;
+}
+
+table {
+    border: 5px solid #212121;
+    width: 95%;
+    border-collapse: collapse;
+    margin: 1rem;
+
+}
+
+th {
+    font-weight: bold;
+    border: 1px solid #212121;
+}
+tr, td {
+    border: 1px solid #212121;
+}
+tr, th {
+    font-size: 1rem;
+    padding: 0.5rem;
 }
