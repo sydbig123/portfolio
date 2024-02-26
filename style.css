@@ -42,10 +42,28 @@ ul {
     padding-left: 5.5rem;
 }
 
-#portrait {
+img {
+    margin: 1rem 2rem;
+    width: 500px;
+}
+
+.centerImgs {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.sydney {
     width: 400px;
     border: 10px solid #212121;
-    margin: 1rem 2rem 0 0;
+}
+
+.leftPhoto {
+    float: left;
+}
+
+.rightPhoto {
+    float: right;
 }
 
 nav a {
@@ -54,14 +72,22 @@ nav a {
     margin-bottom: 2rem;
 }
 
-a:hover, i:hover { /* when you hover over something with a tag a then it will follow the code below */
+a:hover, .fa-brands:hover { /* when you hover over something with a tag a then it will follow the code below */
     color: #e0e0e0;
 }
 
-i {
+.fa-brands {
     font-size: 1.75rem;
     margin: 0 10px 10px 10px;
     color: white;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.small {
+    font-size: smaller;
 }
 
 
@@ -94,14 +120,15 @@ nav ul li {
     margin: 1rem;
 }
 
-.top {
-    padding-top: 7rem;
+.mainContent {
+    padding-top: 6rem;
+    min-height: 85vh;
 }
 
 /* footer section */
 
 footer {
-    height: 5.5rem;
+    height: 5rem;
     width: 100%;
     background-color: #69C8EB;
     color: white;
@@ -118,21 +145,12 @@ footer {
     list-style: square;
 }
 
-#opening {
-    display: inline-flex;
-}
-
 
 /*coding projects*/
-#mockups {
-    display: flex;
-    align-content: center;
-}
 
-.project img {
-    margin: 1rem 2.5rem;
-    width: 50%;
+.mockups {
     height: auto;
+    border: none;
 }
 
 .project p {
@@ -142,10 +160,18 @@ footer {
 .persistLst {
     display: inline-flex;
     padding: 2rem;
+    margin: 0 2rem;
+}
+
+.persistLst > li {
+    margin: 0 2rem;
 }
 
 .diagram {
-    width: 98%;
+    width: 95%;
+    margin: 1rem 2.5rem;
+    height: auto;
+    align-content: center;
 }
 
 table {
