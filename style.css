@@ -1,10 +1,17 @@
+:root {
+    --blue: #69C8EB;
+    --darkGrey: #212121;
+    --veryLightGrey: #e0e0e0;
+
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;       /* base is 400 for font */
     scroll-behavior: smooth;
-    color: #212121;
+    color: var(--darkGrey);
 }
 
 h1 {
@@ -44,18 +51,23 @@ ul {
 
 img {
     margin: 1rem 2rem;
-    width: 500px;
+    width: 450px;
 }
 
 .centerImgs {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+.thinBorder > img{
+    border: 1px solid var(--darkGrey);
+    border-radius: 5px;
 }
 
 .sydney {
     width: 400px;
-    border: 10px solid #212121;
+    border: 10px solid var(--darkGrey);
 }
 
 .leftPhoto {
@@ -68,12 +80,12 @@ img {
 
 nav a {
     text-decoration: none;
-    color: #212121;
+    color: var(--darkGrey);
     margin-bottom: 2rem;
 }
 
 a:hover, .fa-brands:hover { /* when you hover over something with a tag a then it will follow the code below */
-    color: #e0e0e0;
+    color: var(--veryLightGrey);
 }
 
 .fa-brands {
@@ -96,7 +108,7 @@ strong {
 nav {;
     height: 64px;
     width: 100%;
-    background-color: #69C8EB;
+    background-color: var(--blue);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -130,7 +142,7 @@ nav ul li {
 footer {
     height: 5rem;
     width: 100%;
-    background-color: #69C8EB;
+    background-color: var(--blue);
     color: white;
     padding-top: 1.5rem;
     margin-top: 2rem;
@@ -156,6 +168,10 @@ footer {
 .project p {
     padding-bottom: 0;
 }
+.projectList > li > ul > li{
+    list-style-type: none;
+    text-indent: -20px;
+}
 
 .persistLst {
     display: inline-flex;
@@ -175,7 +191,7 @@ footer {
 }
 
 table {
-    border: 5px solid #212121;
+    border: 5px solid var(--darkGrey);
     width: 95%;
     border-collapse: collapse;
     margin: 1rem;
@@ -184,10 +200,10 @@ table {
 
 th {
     font-weight: bold;
-    border: 1px solid #212121;
+    border: 1px solid var(--darkGrey);
 }
 tr, td {
-    border: 1px solid #212121;
+    border: 1px solid var(--darkGrey);
 }
 tr, th {
     font-size: 1rem;
