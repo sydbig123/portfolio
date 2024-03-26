@@ -18,10 +18,10 @@
 h1 {
     /* ram: 1 rem is the default font is html which is about 16px - rem is more uniform */
     font-size: 3.5rem;
-    line-height: 2rem;
+    /*line-height: 2rem;*/
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 h2 {
@@ -51,7 +51,7 @@ h1 + ul {
 }
 
 h2 ~ ul {
-    padding: 1rem 2.5rem 1rem 5.5rem;
+    padding: 1rem 2.5rem 1rem 3rem;
     box-sizing: border-box;
 
 }
@@ -174,14 +174,29 @@ footer {
     box-sizing: border-box;
 }
 
+#progExp {
+    list-style: square;
+}
+
+.projectList > li {
+    list-style: none;
+}
+
 
 /* about me*/
 .lsts {
     list-style: square;
+    padding-top: 0;
 }
 
+.projectList > li > h2{
+    padding-left: 0;
+}
 
-/*coding projects*/
+/*.projectList {*/
+/*    padding-left: 5rem;*/
+/*}*/
+
 
 .mockups {
     height: auto;
