@@ -8,302 +8,395 @@
 
 </head>
 <body class="project">
-    <header>
-        <nav>
-            <a id="title" href="./index.html">Sydney Biggar</a>
+    <div class="flexWrap">
+        <header>
+            <nav>
+                <a id="title" href="./index.html">Sydney Biggar</a>
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./aboutme.html">about me</a></li>
+                    <li><a href="./projects.html">projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="mainContent">
+            <h1>Trash2Treasure</h1>
+
+            <p>The following is a group project that I worked on in one of my classes during Fall 2023. </p>
+            <br>
+            <h2>Problem Statement</h2>
+            <p>Trash2Treasure is an application that can be used to locate Recycling Centers, learn
+                about the recycling policies of specific Recycling Centers, learn how to properly recycle,
+                and track your recycling habits. Our application targets users who are looking to track how
+                much they recycle and/or become more environmentally friendly by learning how to recycle
+                properly. </p>
+
+            <br><br>
+            <h2>Stakeholder Analysis</h2>
+            <table>
+                <tr>
+                    <th>Stakeholder</th>
+                    <th>Power</th>
+                    <th>Legitimacy</th>
+                    <th>Urgency</th>
+                </tr>
+                <tr>
+                    <td>Recycling and Reclamation Workers</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Local Community Residents</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Government</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Local Businesses</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Environmental Activist Groups/Specialists</td>
+                    <td>Medium</td>
+                    <td>Medium</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Waste Management Companies</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <br>
+            <h3>Stakeholder 1: Recycling and Reclamation Workers</h3>
+            <table>
+                <tr>
+                    <th>Stakeholder Evaluation Criteria</th>
+                    <th>What will YOU do</th>
+                </tr>
+                <tr>
+                    <td>Communication and reports</td>
+                    <td>Report incidents such as contaminations or public service announcements regarding recycling initiatives</td>
+                </tr>
+                <tr>
+                    <td>Job Satisfaction</td>
+                    <td>Recycling workers will have less sorting to deal with now that users are more well informed about the recycling process and feel that their work is worthwhile and beneficial </td>
+                </tr>
+                <tr>
+                    <td>Employment</td>
+                    <td>Promote employment opportunities and opportunities in local sectors of waste management and recycling</td>
+                </tr>
+            </table>
+            <br>
+            <h3>Stakeholder 2: Local Community Residents</h3>
+            <table>
+                <tr>
+                    <th>Stakeholder Evaluation Criteria</th>
+                    <th>What will YOU do</th>
+                </tr>
+                <tr>
+                    <td>Accessibility</td>
+                    <td>A way for people to recycle at home, so they do not have to move to recycle. Display information and instructions so community residents have all information in one place</td>
+                </tr>
+                <tr>
+                    <td>Cost</td>
+                    <td>Make sure that the recycling process is cost-effective</td>
+                </tr>
+                <tr>
+                    <td>Incentive</td>
+                    <td>Give users in the community an incentive to what to join the recycling project for example a point system or money</td>
+                </tr>
+            </table>
+            <br>
+            <h3>Stakeholder 3: Government</h3>
+            <table>
+                <tr>
+                    <th>Stakeholder Evaluation Criteria</th>
+                    <th>What will YOU do</th>
+                </tr>
+                <tr>
+                    <td>Promote hope in future climate conditions</td>
+                    <td>We will draw in more people who aren't environmentally cautious to start thinking about their contribution to climate change to promote more of a collective effort</td>
+                </tr>
+                <tr>
+                    <td>Enforce legislation and regulations about recycling and waste disposal</td>
+                    <td>Promote and spread information about regulations in a way that is easy for users to understand and utilize</td>
+                </tr>
+                <tr>
+                    <td>Re-allocation of climate change funding</td>
+                    <td>More users using our app allows for a more efficient recycling and waste management process, less funding is required to promote recycling initiatives and are able to go elsewhere to help different sectors of environmental protection</td>
+                </tr>
+            </table>
+            <br>
+            <h3>Stakeholder 4: Local Businesses</h3>
+            <table>
+                <tr>
+                    <th>Stakeholder Evaluation Criteria</th>
+                    <th>What will YOU do</th>
+                </tr>
+                <tr>
+                    <td>Community Engagement</td>
+                    <td>Strengthen ties with local community by participating in local recycling initiatives</td>
+                </tr>
+                <tr>
+                    <td>Competitive Edge</td>
+                    <td>Make it easy for small businesses to maximize their waste reduction in order to make them stand out from other businesses who do not prioritize waste management and appeal to customers who value sustainability</td>
+                </tr>
+                <tr>
+                    <td>Regulation Compliance</td>
+                    <td>Allow businesses to view local/federal regulations to ensure they are following all government issued rules and do not face penalties</td>
+                </tr>
+                <tr>
+                    <td>Less waste, cost reduction</td>
+                    <td>Incentivize businesses by providing them with information on how much money they could be saving by reducing waste </td>
+                </tr>
+            </table>
+            <br>
+            <h3>Stakeholder 5: Environmental Activist Groups/Specialists</h3>
+            <table>
+                <tr>
+                    <th>Stakeholder Evaluation Criteria</th>
+                    <th>What will YOU do</th>
+                </tr>
+                <tr>
+                    <td>Influence public opinion</td>
+                    <td>Work with activist groups to get them to promote our product to like minded individuals who want to make a change </td>
+                </tr>
+                <tr>
+                    <td>Clearer recycling guidelines</td>
+                    <td>Communicate with specialist about what needs to be done to have each piece of trash recycled correctly or if it can be recycled </td>
+                </tr>
+                <tr>
+                    <td>Hope for a better quality of life</td>
+                    <td>Preserve and improve efforts for environmental quality in local communities or nationwide </td>
+                </tr>
+            </table>
+            <br>
+            <h3>Stakeholder 6: Waste Management Companies</h3>
+            <table>
+                <tr>
+                    <th>Stakeholder Evaluation Criteria</th>
+                    <th>What will YOU do</th>
+                </tr>
+                <tr>
+                    <td>Expand</td>
+                    <td>These companies can expand their service and get more people involved in terms of jobs and voluntary work </td>
+                </tr>
+                <tr>
+                    <td>Profit</td>
+                    <td>Companies can profit while they expand their business as that brings more money</td>
+                </tr>
+                <tr>
+                    <td>Partnership</td>
+                    <td>Merge with other companies to expand the idea and people</td>
+                </tr>
+            </table>
+
+            <br><br>
+            <h2>SCRUM User Stories</h2>
+            <table id="scrum">
+                <tr>
+                    <th>User Story #</th>
+                    <th>User Story</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>As a manager at a Recycling Center, I want to input items that our center is able to recycle so that people do not bring items to our Recycling Center that we are unable to properly recycle</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>As a homeowner that recycles, I want to pin my local Recycling Center so that it is easier to find information about it</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>As a person who is learning to recycle, I want to have an easy to read list of recycling symbols (such as the resin ID codes) so that I can learn what is recyclable and what is not</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>As a thrift shopper, I want to find locations of thrift stores and goodwills so that I can donate/sell my old clothing items, accessories, etc.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>As a recycler, I want to locate recycling bins when I’m on the go so that I can recycle my waste instead of throwing it away</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>As a recycler, I want to learn common ways people recycle incorrectly so that I can fix my mistakes and learn to recycle properly</td>
+                </tr>
+            </table>
+
+            <br><br>
+            <h2>Use Case Diagram</h2>
+            <img src="documents/trash2treasure/UseCaseDiagram.png" alt="Use Case Diagram">
+
+            <br><br>
+            <h2>Customer Journey Map</h2>
+            <table id="journeyMap">
+                <tr>
+                    <th></th>
+                    <th>Awareness</th>
+                    <th>Research</th>
+                    <th>Acquire</th>
+                    <th>OOBE</th>
+                </tr>
+                <tr>
+                    <th>Activities</th>
+                    <td>
+                        <ul>
+                            <li>Sees a friend using the app</li>
+                            <li>Finds out about it through other forms of media such as a poster, news, blog, etc</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Visit its website and social media pages, watching videos and looking at images</li>
+                            <li>Download the app and explore the features where they can make money</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Go to the App Store</li>
+                            <li>Download the app onto a device</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Guide users how to create account</li>
+                            <li>Set user preferences (profile, demographic, etc)</li>
+                            <li>Provide clear help menu for walkthroughs of functionality of app</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Motivations</th>
+                    <td>
+                        <ul>
+                            <li>Societal pressures to lower carbon footprint and show that they care about the environment </li>
+                            <li>Friends use the app</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Positive reviews and stories of successful research keep the user going and helping the environment</li>
+                            <li>Users are encouraged to actively participate due to the app's reward system, which offers money for recycling items</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Friend recommended it</li>
+                            <li>Wants to learn more about recycling</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Highlight and record environmental progress and impact</li>
+                            <li>Share record, progress, and milestones with other users</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Questions</th>
+                    <td>
+                        <ul>
+                            <li>Does the app cost money?</li>
+                            <li>Do other people like the app?</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Is the app compatible with different kinds of recyclables?</li>
+                            <li>Users might ask for evidence that the app is supported with the right data</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Do I think the app will be helpful?</li>
+                            <li>Do I think I will use the app?</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Do I need instructions?</li>
+                            <li>Can I manage user preferences after I initially sign up?</li>
+                            <li>Can I contact customer service for help in the app?</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Barriers</th>
+                    <td>
+                        <ul>
+                            <li>User does not care about recycling</li>
+                            <li>Lives in an area that does not have a recycling center</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Users might ask about complexity of the app and if any age group can understand it</li>
+                            <li>Users might doubt the security and privacy unless there is research that this is secure and trustworthy</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>App is not compatible with my device</li>
+                            <li>Cannot find the app in the app store</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>User's data is not secure enough</li>
+                            <li>Interface is not compatible enough with accessibility devices</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <br><br>
+            <h2>Site Map</h2>
+            <img class="diagram" src="documents/trash2treasure/UXMap.drawio.png" alt="Site Map">
+            <p>Our design approach began with a focus on our use cases, where we thought about how to organize them logically. We began by sketching out a layout for the home screen, and looking for the essential elements that should be there. Once we had a clear vision for the home page and navigation bar, it became simpler to group the information according to how we wanted our design to be structured. We decided to put distinct buttons on the home bar for each section, allowing users to easily access various parts of the app. For example, the navigation bar of our app would consist of the main functions: User Profile, Locate Center, How to Guide, Waste-Saved Progress, and Social. Within these sections, we placed the specific functions that belonged to each area. In the User Profile section the user will be able to manage general and security preferences as well as sign in and out. In the Locate Center section the user will be able to search the map in various ways and view details about each center such as if they are able to receive financial compensation there. The How to Guide screen will start with the user manually searching  for an item or scanning an item. The next screen will provide steps for the user to follow to correctly throw out their item. The Waste-Saved Progress section is where the users rewards will be tracked and where they can find their recycling points and “Impact on environment.” Finally, the Social section is where the users can compete with one another in points and see updates on their friends’ status. This grouping approach ensures that users can navigate through the app with ease as each section and its contents are logically organized and accessible.</p>
+
+            <br><br>
+            <h2>User Flow Diagram</h2>
+            <img class="diagram" src="documents/trash2treasure/HCDDFlow.png" alt="Flow Diagram" id="flow">
+            <p>This user flow model begins with the user creating an account or logging into their existing account. After the user successfully logs in, they will be brought to the app’s home page. At the bottom of this page (along with all of the app’s pages besides the login and sign up pages), the user is able to access the navigation bar that can lead the user to any of the following pages: Home, Scan, Map/Guide, Social, and Profile. </p>
+
+            <br><br>
+            <h2>Prototype</h2>
+            <p>To view the prototype, <a href="https://www.figma.com/proto/OGjWwf27uoe8Vn1kl0AVPs/Trash2Treasure-Prototype?page-id=0%3A1&type=design&node-id=4-165&viewport=29%2C292%2C0.07&t=AQy77lmXcGbY6TiS-1&scaling=scale-down&starting-point-node-id=4%3A165&show-proto-sidebar=1&mode=design" target="_blank">click here</a>! My group and I created this prototype using Figma.</p>
+
+            <br><br>
+            <h2>Moving Forward</h2>
+            <p>If my group and I were to move forward with this project, we would make the
+                following edits to our project before continuing with user-testing.</p>
             <ul>
-                <li><a href="./index.html">home</a></li>
-                <li><a href="./aboutme.html">about me</a></li>
-                <li><a href="./projects.html">projects</a></li>
+                <li>Ensure the entire application uses the elements, styles, and fonts listed
+                    in the Style Guide that we made</li>
+                <li>Make button areas larger and ensure all buttons are in places where they
+                    will not be overlooked by users</li>
+                <li>Create more visual feedback within the application for successful and
+                    unsuccessful actions</li>
             </ul>
-        </nav>
-    </header>
-
-    <div class="mainContent">
-        <h1>Design Project</h1>
-        <p><em>(Page in progress)</em></p>
-
-        <p>The following is a group project that I completed in a class during Fall 2023. </p>
-
-        <h2>Problem Statement</h2>
-
-        <br><br>
-        <h2>Stakeholder Analysis</h2>
-        <table>
-            <tr>
-                <th>Stakeholder</th>
-                <th>Power</th>
-                <th>Legitimacy</th>
-                <th>Urgency</th>
-            </tr>
-            <tr>
-                <td>Recycling and Reclamation Workers</td>
-                <td>High</td>
-                <td>High</td>
-                <td>Medium</td>
-            </tr>
-            <tr>
-                <td>Local Community Residents</td>
-                <td>Medium</td>
-                <td>High</td>
-                <td>High</td>
-            </tr>
-            <tr>
-                <td>Government</td>
-                <td>High</td>
-                <td>High</td>
-                <td>High</td>
-            </tr>
-            <tr>
-                <td>Local Businesses</td>
-                <td>High</td>
-                <td>High</td>
-                <td>High</td>
-            </tr>
-            <tr>
-                <td>Environmental Activist Groups/Specialists</td>
-                <td>Medium</td>
-                <td>Medium</td>
-                <td>Medium</td>
-            </tr>
-            <tr>
-                <td>Waste Management Companies</td>
-                <td>High</td>
-                <td>Medium</td>
-                <td>Medium</td>
-            </tr>
-        </table>
-
-        <br>
-        <h3>Stakeholder 1: Recycling and Reclamation Workers</h3>
-        <table>
-            <tr>
-                <th>Stakeholder Evaluation Criteria</th>
-                <th>What will YOU do</th>
-            </tr>
-            <tr>
-                <td>Communication and reports</td>
-                <td>mo</td>
-            </tr>
-            <tr>
-                <td>mo</td>
-                <td>mo</td>
-            </tr>
-            <tr>
-                <td>mo</td>
-                <td>mo</td>
-            </tr>
-            <tr>
-                <td>mo</td>
-                <td>mo</td>
-            </tr>
-
-        </table>
-        <br>
-        <h3>Stakeholder 1: Recycling and Reclamation Workers</h3>
-        <table>
-            <tr>
-                <th>Stakeholder Evaluation Criteria</th>
-                <th>What will YOU do</th>
-            </tr>
-            <tr>
-                <td>mo</td>
-                <td>mo</td>
-            </tr>
-            <tr>
-                <td>mo</td>
-                <td>mo</td>
-            </tr>
-            <tr>
-                <td>mo</td>
-                <td>mo</td>
-            </tr>
-            <tr>
-                <td>mo</td>
-                <td>mo</td>
-            </tr>
-
-        </table>
-
-        <br><br>
-        <h2>SCRUM User Stories</h2>
-
-        <br><br>
-        <h2>Use Case Diagram</h2>
-
-        <br><br>
-        <h2>Customer Journey Map</h2>
-        <table>
-            <tr>
-                <th></th>
-                <th>Awareness</th>
-                <th>Research</th>
-                <th>Acquire</th>
-                <th>OOBE</th>
-            </tr>
-            <tr>
-                <th>Activities</th>
-                <td>
-                    <ul>
-                        <li>Sees a friend using the app</li>
-                        <li>Finds out about it through other forms of media such as a poster, news, blog, etc</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Visit its website and social media pages, watching videos and looking at images</li>
-                        <li>Download the app and explore the features where they can make money</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Go to the App Store</li>
-                        <li>Download the app onto a device</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Guide users how to create account</li>
-                        <li>Set user preferences (profile, demographic, etc)</li>
-                        <li>Provide clear help menu for walkthroughs of functionality of app</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th>Motivations</th>
-                <td>
-                    <ul>
-                        <li>Societal pressures to lower carbon footprint and show that they care about the environment </li>
-                        <li>Friends use the app</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Positive reviews and stories of successful research keep the user going and helping the environment</li>
-                        <li>Users are encouraged to actively participate due to the app's reward system, which offers money for recycling items</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Friend recommended it</li>
-                        <li>Wants to learn more about recycling</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Highlight and record environmental progress and impact</li>
-                        <li>Share record, progress, and milestones with other users</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th>Questions</th>
-                <td>
-                    <ul>
-                        <li>Does the app cost money?</li>
-                        <li>Do other people like the app?</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Is the app compatible with different kinds of recyclables?</li>
-                        <li>Users might ask for evidence that the app is supported with the right data</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Do I think the app will be helpful?</li>
-                        <li>Do I think I will use the app?</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Do I need instructions?</li>
-                        <li>Can I manage user preferences after I initially sign up?</li>
-                        <li>Can I contact customer service for help in the app?</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th>Barriers</th>
-                <td>
-                    <ul>
-                        <li>User does not care about recycling</li>
-                        <li>Lives in an area that does not have a recycling center</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Users might ask about complexity of the app and if any age group can understand it</li>
-                        <li>Users might doubt the security and privacy unless there is research that this is secure and trustworthy</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>App is not compatible with my device</li>
-                        <li>Cannot find the app in the app store</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>User's data is not secure enough</li>
-                        <li>Interface is not compatible enough with accessibility devices</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-
-        <br><br>
-        <h2>Interviews</h2>
+        </div>
 
 
-        <br><br>
-        <h2>Product Backlog</h2>
-
-        <br><br>
-        <h2>Storyboard</h2>
-
-        <br><br>
-        <h2>Site Map</h2>
-        <img class="diagram" src="documents/trash2treasure/UXMap.drawio.png" alt="Site Map">
-
-        <br><br>
-        <h2>User Flow Diagram</h2>
-        <img class="diagram" src="documents/trash2treasure/HCDDFlow.png" alt="flow" id="flow">
-
-        <br><br>
-        <h2>Style Guide</h2>
-
-        <br><br>
-        <h2>Initial Prototype</h2>
-
-        <br><br>
-        <h2>Guided Cognitive Walkthroughs</h2>
-
-        <br><br>
-        <h2>Edited Prototype</h2>
-
-        <br><br>
-        <h2>Moving Forward</h2>
-        <p>If my group and I were to move forward with this project, we would make the
-            following edits to our project before continuing with user-testing.</p>
-        <ul>
-            <li>Ensure the entire application uses the elements, styles, and fonts listed
-                in the Style Guide</li>
-            <li>Make button areas larger and ensure all buttons are in places where they
-                will not be overlooked by users</li>
-            <li>Create more visual feedback within the application for successful and
-                unsuccessful actions</li>
-        </ul>
+        <footer>
+            <a href="https://www.codepen.io/sydbig123" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+            <a href="https://www.linkedin.com/in/sydney-biggar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.github.com/sydbig123" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </footer>
     </div>
-
-
-    <footer>
-        <a href="https://www.codepen.io/sydbig123"><i class="fa-brands fa-codepen"></i></a>
-        <a href="https://www.linkedin.com/in/sydney-biggar/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.github.com/sydbig123"><i class="fa-brands fa-github"></i></a>
-
-    </footer>
-
 </body>
 </html>

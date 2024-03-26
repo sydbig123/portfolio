@@ -2,7 +2,8 @@
     --blue: #69C8EB;
     --darkGrey: #212121;
     --veryLightGrey: #e0e0e0;
-
+    --yellow: #F9DC5C;
+    --darkBlue: #306BAC;
 }
 
 * {
@@ -44,9 +45,20 @@ p {
     text-indent: 35px;
 }
 
+h1 + ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2 ~ ul {
+    padding: 1rem 2.5rem 1rem 5.5rem;
+    box-sizing: border-box;
+
+}
+
 ul {
     font-size: 1.25rem;
-    padding-left: 5.5rem;
+    padding-left: 2.5rem;
 }
 
 img {
@@ -106,7 +118,7 @@ strong {
 
 /* navbar */
 nav {;
-    height: 64px;
+    height: 5rem;
     width: 100%;
     background-color: var(--blue);
     padding: 20px;
@@ -114,15 +126,18 @@ nav {;
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    box-sizing: border-box;
 }
 
 nav ul {
     display: flex;
     list-style: none;   /*gets rid of bullet points*/
+    margin: 2rem;
 }
 
 nav ul li {
-    margin: 30px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #title {
@@ -134,7 +149,7 @@ nav ul li {
 
 .mainContent {
     padding-top: 6rem;
-    min-height: 85vh;
+    min-height: 90vh;
 }
 
 /* footer section */
@@ -147,9 +162,17 @@ footer {
     padding-top: 1.5rem;
     margin-top: 2rem;
     text-align: center;
+    box-sizing: border-box;
 }
 
-
+.flexWrap {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
 /* about me*/
@@ -175,12 +198,21 @@ footer {
 
 .persistLst {
     display: inline-flex;
-    padding: 2rem;
+    padding: 0;
     margin: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.persistLst > ul {
+    justify-content: space-between;
+}
+
+.persistLst > li > ul > li,  .persistLst > li > ul > li > ul > li {
+    font-size: 1rem;
 }
 
 .persistLst > li {
-    margin: 0 2rem;
+    margin: 2rem;
 }
 
 .diagram {
@@ -191,21 +223,25 @@ footer {
 }
 
 table {
-    border: 5px solid var(--darkGrey);
+    border: 0.25rem solid var(--darkGrey);
     width: 95%;
     border-collapse: collapse;
-    margin: 1rem;
-
+    margin: 1rem auto;
 }
 
 th {
     font-weight: bold;
     border: 1px solid var(--darkGrey);
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 tr, td {
     border: 1px solid var(--darkGrey);
+    width: auto;
+    height: auto;
 }
-tr, th {
-    font-size: 1rem;
-    padding: 0.5rem;
+td > ul{
+    font-size: 0.95rem;
+    margin: 0.25rem;
+    padding-left: 2rem;
 }
