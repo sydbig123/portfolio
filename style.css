@@ -11,17 +11,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;       /* base is 400 for font */
+    font-weight: 100;
     scroll-behavior: smooth;
     color: var(--darkGrey);
 }
 
 body {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .mainContent {
@@ -47,8 +44,7 @@ nav {;
 
 nav ul {
     display: flex;
-    list-style: none;   /*gets rid of bullet points*/
-    padding: 0;
+    list-style: none;
     margin: 0;
 }
 
@@ -69,7 +65,7 @@ nav a {
     margin: 1rem;
 }
 
-a:hover, .fa-brands:hover { /* when you hover over something with a tag a then it will follow the code below */
+a:hover, .fa-brands:hover {
     color: var(--veryLightGrey);
 }
 
@@ -80,12 +76,8 @@ a:hover, .fa-brands:hover { /* when you hover over something with a tag a then i
 }
 
 h1 {
-    /* rem: 1 rem is the default font in html which is about 16px - rem is more uniform */
-    font-size: 3.5rem;
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: bold;
     padding: 1rem 2rem;
-    margin-bottom: 0;
 }
 
 h2 {
@@ -95,15 +87,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
     padding: 0 1rem;
 }
 
 p {
     font-size: 1.25rem;
-    padding: 1rem 2.5rem;
-    margin-bottom: 0;
+    padding: 0 2.5rem;
 }
 
 h1 + ul {
@@ -111,58 +100,47 @@ h1 + ul {
     padding-bottom: 1rem;
 }
 
-h2 + ul {
+h2 + ul, p + ul {
     padding: 1rem 2.5rem 1rem 5rem;
-    box-sizing: border-box;
 }
 
 p + ul + li{
     padding-bottom: 0;
-    box-sizing: border-box;
 }
 
 ul {
     font-size: 1.25rem;
-    padding-left: 5rem;
-    margin-bottom: 0;
+    list-style: square;
 }
 
 .in {
     text-indent: 35px;
 }
 
-strong {
-    font-weight: bold;
-}
-
-.small {
-    font-size: smaller;
-}
-
 table {
     border: 0.25rem solid var(--darkGrey);
     width: 95%;
-    border-collapse: collapse;
     margin: 1rem auto;
 }
 
-th {
+.ttTable th {
     font-weight: bold;
     border: 1px solid var(--darkGrey);
-    font-size: 1rem;
     padding: 0.5rem;
 }
 
-tr, td {
+.ttTable tr, .ttTable td {
     border: 1px solid var(--darkGrey);
-    width: auto;
-    height: auto;
 }
 
-td > ul{
+.ttTable td > .ttTable ul{
     font-size: 0.95rem;
     margin: 0.25rem;
     padding-left: 2rem;
+}
+
+.ttTable td {
+    padding: 0.25rem;
 }
 
 .btn,.btn-secondary, .btn-secondary:focus, .btn-check:focus+.btn-secondary {
@@ -176,13 +154,9 @@ td > ul{
 
 footer {
     height: 5rem;
-    width: 100%;
     background-color: var(--blue);
-    color: white;
     padding-top: 1.5rem;
-    /*margin-top: 2rem;*/
     text-align: center;
-    box-sizing: border-box;
 }
 
 
@@ -207,7 +181,7 @@ img {
     border-radius: 5px;
 }
 
-.sydney {
+.thon {
     width: 400px;
     border: 10px solid var(--darkGrey);
 }
@@ -220,8 +194,6 @@ img {
 .diagram {
     width: 95%;
     margin: 1rem 2.5rem;
-    height: auto;
-    align-content: center;
 }
 
 .leftPhoto {
@@ -239,12 +211,8 @@ img {
 
 
 /*lists*/
-#progExp {
-    list-style: square;
-}
 
 .lsts {
-    list-style: square;
     padding-top: 0;
     padding-left: 8rem;
     display: flex;
@@ -273,7 +241,6 @@ img {
 
 .persistLst {
     display: inline-flex;
-    padding: 0;
     margin: 0 2rem;
     flex-wrap: wrap;
 }
@@ -292,6 +259,31 @@ img {
 
 .card, .list-group-item {
     background-color: var(--cardColor);
+}
+
+.card {
+    width: 20rem;
+    height: 18rem;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.cardBtn {
+    padding: 1rem;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.cardFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.numbered {
+    text-align: center;
 }
 
 
