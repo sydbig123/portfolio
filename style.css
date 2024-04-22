@@ -9,24 +9,34 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     scroll-behavior: smooth;
     color: var(--darkGrey);
 }
 
+html, body {
+    height: 100%;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
 body {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    height: calc(100vh);
 }
 
 .mainContent {
     padding-top: 6rem;
     padding-bottom: 1rem;
-    min-height: 90vh;
+    min-height: calc(90vh - 4.5rem);
+    /*flex-grow: 1;*/
 }
-/* navbar */
+
 .navbar {
     flex-wrap: revert;
 }
@@ -35,7 +45,7 @@ nav {;
     height: 5rem;
     width: 100%;
     background-color: var(--blue);
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +81,7 @@ a:hover, .fa-brands:hover {
 
 .fa-brands {
     font-size: 1.75rem;
-    margin: 0 10px 10px 10px;
+    margin: 0 0.5rem 0.5rem 0.5rem;
     color: white;
 }
 
@@ -86,9 +96,10 @@ h2 {
     padding: 0 2rem;
 }
 
-h3 {
+h3, h4, h5, h6 {
     padding: 0 1rem;
 }
+
 
 p {
     font-size: 1.25rem;
@@ -114,7 +125,7 @@ ul {
 }
 
 .in {
-    text-indent: 35px;
+    text-indent: 2.25rem;
 }
 
 table {
@@ -125,12 +136,12 @@ table {
 
 .ttTable th {
     font-weight: bold;
-    border: 1px solid var(--darkGrey);
+    border: 0.1rem solid var(--darkGrey);
     padding: 0.5rem;
 }
 
 .ttTable tr, .ttTable td {
-    border: 1px solid var(--darkGrey);
+    border: 0.1rem solid var(--darkGrey);
 }
 
 .ttTable td > .ttTable ul{
@@ -153,7 +164,7 @@ table {
 }
 
 footer {
-    height: 5rem;
+    height: 4.5rem;
     background-color: var(--blue);
     padding-top: 1.5rem;
     text-align: center;
@@ -166,9 +177,13 @@ footer {
 
 /*images*/
 img {
-    margin: 1rem 2rem;
-    width: 450px;
+    margin: 1.5rem;
+    width: 28rem;
 }
+
+/*figcaption {*/
+/*    margin-right: 2.5rem;*/
+/*}*/
 
 .centerImgs {
     display: flex;
@@ -177,13 +192,18 @@ img {
 }
 
 .thinBorder > img{
-    border: 1px solid var(--darkGrey);
-    border-radius: 5px;
+    border: 0.1rem solid var(--darkGrey);
+    border-radius: 0.25rem;
+}
+
+.goldThinBorder {
+    border: 0.1rem solid darkgoldenrod;
+    border-radius: 0.25rem;
+    margin: 1rem;
 }
 
 .thon {
-    width: 400px;
-    border: 10px solid var(--darkGrey);
+    width: 25rem;
 }
 
 .mockups {
@@ -221,9 +241,12 @@ img {
 
 .lsts > li {
     padding-right: 2rem;
-    width: 30vw;
+    width: 20vw;
     justify-content: space-around;
-    box-sizing: border-box;
+}
+
+.resume .lsts {
+    padding-left: 2rem;
 }
 
 .projectList > li {
@@ -236,7 +259,7 @@ img {
 
 .projectList > li > ul > li{
     list-style-type: none;
-    text-indent: -20px;
+    text-indent: -1.25rem;
 }
 
 .persistLst {
@@ -269,7 +292,7 @@ img {
 }
 
 .cardBtn {
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .info {
@@ -285,6 +308,38 @@ img {
 .numbered {
     text-align: center;
 }
+
+
+
+
+
+
+.date {
+    float: right;
+}
+.resume {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.resume h2 {
+    font-weight: normal;
+    padding-top: 0.5rem;
+}
+.resume div {
+    padding-bottom: 2rem;
+}
+.resume p.date {
+    padding-right: 0;
+}
+
+.resume p {
+    margin-bottom: 0;
+}
+
+div.experience div {
+    padding: 0;
+}
+
 
 
 
