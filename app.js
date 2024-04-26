@@ -1,5 +1,9 @@
+let paragraphs = document.querySelectorAll("p");
 
-const pElement = document.querySelectorAll("p");
-pElement.forEach( p => {
-    p.classList.add("in");
-})
+paragraphs.forEach((para) => {
+    if (!para.classList.contains("noIn")) {
+        para.classList.add("in")
+    }
+});
+
+

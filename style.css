@@ -163,6 +163,14 @@ table {
     background-color: #0a58ca;
 }
 
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    background-color: var(--veryLightGrey);
+}
+
 footer {
     height: 4.5rem;
     background-color: var(--blue);
@@ -242,11 +250,16 @@ img {
 .lsts > li {
     padding-right: 2rem;
     width: 20vw;
-    justify-content: space-around;
 }
 
-.resume .lsts {
-    padding-left: 2rem;
+.skills {
+    justify-content: space-around;
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+.skills > li {
+    width: revert;
 }
 
 .projectList > li {

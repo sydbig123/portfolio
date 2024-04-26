@@ -1,2 +1,2 @@
 # portfolio
- My project portfolio
+ Sydney Biggar's project portfolio
