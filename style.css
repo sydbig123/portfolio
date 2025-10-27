@@ -1,10 +1,12 @@
 :root {
-    --blue: #69C8EB;
+    --lightblue: #D3EBFD;  /* 69C8EB; */
     --darkGrey: #212121;
     --veryLightGrey: #e0e0e0;
     --yellow: #F9DC5C;
     --cardColor: lightgray;
     --darkBlue: #1E6AE1;
+    --blue: #7ec7fc;    /* bbe0fc; */
+    --otherblue: #bbe0fc;
 }
 
 * {
@@ -17,6 +19,7 @@
 
 html, body {
     height: 100%;
+    padding: 0;
 }
 
 body > footer {
@@ -33,7 +36,7 @@ body {
 .mainContent {
     padding-top: 6rem;
     padding-bottom: 1rem;
-    min-height: calc(90vh - 4.5rem);
+    min-height: calc(100vh - 4.5rem);
     /*flex-grow: 1;*/
 }
 
@@ -41,7 +44,7 @@ body {
     flex-wrap: revert;
 }
 
-nav {;
+nav {
     height: 5rem;
     width: 100%;
     background-color: var(--blue);
@@ -76,7 +79,7 @@ nav a {
 }
 
 a:hover, .fa-brands:hover {
-    color: var(--veryLightGrey);
+    color: var(--lightblue);
 }
 
 .fa-brands {
@@ -189,9 +192,10 @@ img {
     width: 28rem;
 }
 
-/*figcaption {*/
-/*    margin-right: 2.5rem;*/
-/*}*/
+figcaption {
+    /* margin-right: 2.5rem; */
+    text-align: center;
+}
 
 .centerImgs {
     display: flex;
@@ -212,6 +216,7 @@ img {
 
 .thon {
     width: 25rem;
+    margin: 0;
 }
 
 .mockups {
@@ -230,6 +235,7 @@ img {
 
 .rightPhoto {
     float: right;
+    margin: 0 20px 16px 20px;
 }
 
 
@@ -260,6 +266,7 @@ img {
 
 .skills > li {
     width: revert;
+    list-style-type: none;
 }
 
 .projectList > li {
